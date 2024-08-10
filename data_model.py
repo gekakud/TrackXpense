@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, Literal
+from typing import Optional, Literal, List
 from typing import get_args
 
 
@@ -17,6 +17,7 @@ class Expense(BaseModel):
     currency: Optional[CURRENCY_LIST] = "USD"
     tag: Optional[TAG_LIST] = ""
     notes: Optional[str] = ""
+    attachments: Optional[List[str]] = []
 
 
 # Extract regular lists from Literal types

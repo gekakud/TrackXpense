@@ -42,10 +42,10 @@ class AddExpenseDialog(QDialog):
     def add_expense(self):
         new_expense = {
             'name': self.name_field.text(),
-            'category': self.category_field.text(),
+            'category': self.category_field.currentText(),
             'amount': float(self.amount_field.text()),
-            'currency': self.currency_field.text(),
-            'tag': self.tag_field.text(),
+            'currency': self.currency_field.currentText(),
+            'tag': self.tag_field.currentText(),
             'notes': self.notes_field.text()
         }
 
