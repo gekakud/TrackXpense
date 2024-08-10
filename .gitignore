@@ -1,0 +1,39 @@
+# Ignore all files with the following extensions
+*.log
+*.tmp
+*.pyo
+*.pyd
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore directories
+.venv/
+venv/
+data/
+__pycache__/
+
+# Ignore build output
+expense-tracker-client/build/
+expense-tracker-client/dist/
+expense-tracker-client/.cache
+
+# Ignore JavaScript and Node.js dependencies
+expense-tracker-client/node_modules/
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore other specific files
+secrets.yml
+credentials.json
+
+# Ignore by patterns
+**/debug/

@@ -1,0 +1,6 @@
+pyinstaller
+PyQt5
+pydantic
+fastapi
+uvicorn
+requests
